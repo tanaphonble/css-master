@@ -50,7 +50,7 @@
   padding: .5em 1em .5em 2em;
 }
 
-p::first-letter {
+article:first-of-type p::first-letter {
   float: left;
   font: bold italic 1.5em serif;
   color: #3f51b5;

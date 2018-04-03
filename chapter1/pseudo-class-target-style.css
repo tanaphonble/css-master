@@ -1,0 +1,27 @@
+label:not(.label-radio) {
+  font-weight: bold;
+  display: block;
+}
+
+input:required {
+  border: 1px solid #ffc107;
+}
+
+[type=radio] {
+  opacity: 0;
+}
+
+[type=radio]+label::before {
+  background: #fff;
+  content: '';
+  display: inline-block;
+  border: 1px solid #444;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1em;
+  vertical-align: middle;
+}
+
+[type=radio]:checked+label::before {
+    background: #4caf50;
+}
