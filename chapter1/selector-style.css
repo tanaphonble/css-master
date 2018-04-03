@@ -13,3 +13,26 @@ label~input {
 *+fieldset {
   margin: 1em 0;
 }
+
+.required::after {
+  content: ' (Required) ';
+  color: #c00;
+  font-size: .8em;
+}
+
+.help::before {
+  content: '(';
+}
+
+.help::after {
+  content: ')';
+}
+
+.clearfix::before, .clearfix::after {
+  content: ' ';
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}

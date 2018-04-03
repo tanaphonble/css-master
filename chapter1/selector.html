@@ -30,12 +30,12 @@
     <fieldset>
       <legend>Payment</legend>
       <p>
-        <label for="ccn">Credit card number</label>
+        <label class="required" for="ccn">Credit card number</label>
         <span class="help">No spaces or dashes, please.</span>
         <input type="text" name="ccn" id="ccn" placeholder="3720000000000008" maxlength="16" size="16" />
       </p>
       <p>
-        <label for="expiration">Expiration date</label>
+        <label class="required" for="expiration">Expiration date</label>
         <span class="help">
           <abbr title="Two-digit month">MM</abbr>
           <abbr title="Four-digit year">YYYY</abbr>
@@ -66,7 +66,7 @@
         <input type="text" name="zip" id="zip" placeholder="12345" maxlength="5" pattern="0-9{5}" size="5" />
       </p>
     </fieldset>
-    <button type="submit">Buy Tickets!</button>
+    <button class="clearfix" type="submit">Buy Tickets!</button>
   </form>
 </body>
 
