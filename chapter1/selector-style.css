@@ -36,3 +36,7 @@ label~input {
 .clearfix::after {
   clear: both;
 }
+
+input:invalid {
+  border: 1px groove red;
+}

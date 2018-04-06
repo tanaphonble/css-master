@@ -1,0 +1,50 @@
+body {
+  background: #fff;
+  transition: 5s cubic-bezier(0, 1, 1, 0);
+}
+
+.change {
+  background: #000;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.5);
+    opacity: .8;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    background: coral;
+  }
+  25% {
+    transform: scale(.5) skewX(-5deg) rotate(-5deg);
+  }
+  50% {
+    transform: skewY(5deg) rotate(5deg);
+  }
+  75% {
+    transform: skewX(-5deg) rotate(-5deg) scale(1.5);
+  }
+  100% {
+    transform: scale(1.5);
+    background: chartreuse;
+  }
+}
+
+.hi {
+  opacity: 0.8;
+  transform: scale(0.5);
+  text-align: center;
+  background: aqua;
+}
+
+.pulse {
+  /* animation: pulse 1s infinite alternate; */
+  animation: wiggle .5s both 2s;
+}
