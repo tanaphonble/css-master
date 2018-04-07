@@ -44,7 +44,11 @@ body {
   background: aqua;
 }
 
-.pulse {
-  /* animation: pulse 1s infinite alternate; */
-  animation: wiggle .5s both 2s;
+.wiggle {
+  animation: wiggle .5s .5s;
+  animation-play-state: paused;
+}
+
+.running {
+  animation-play-state: running;
 }

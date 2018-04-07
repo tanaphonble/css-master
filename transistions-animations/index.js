@@ -1,15 +1,21 @@
 
 (function () {
-  const button = document.getElementById('button')
+
+  const changeBgButton = document.getElementById('change-bg')
+  const playAnimButton = document.getElementById('play-anim')
+
+
 
   document.body.addEventListener('transitionend', function () {
     console.log('transition end')
   })
 
-  document.body.addEventListener
-
-  button.addEventListener('click', function () {
+  changeBgButton.addEventListener('click', function () {
     document.body.classList.toggle('change')
+  })
+
+  playAnimButton.addEventListener('click', function () {
+    document.getElementById('anim').classList.add('running')
   })
 })()
 
